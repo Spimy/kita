@@ -1,0 +1,33 @@
+{
+  "name": "kita",
+  "version": "1.0.0",
+  "description": "A Discord.JS wrapper to speed up development process by getting the basics readily done. A revision of the monorepo 'yor' renamed to Kita.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.js",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "dev": "npx tsc -w",
+    "build": "npx tsc -b"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "discordjs",
+    "wrapper",
+    "yor",
+    "kita",
+    "development"
+  ],
+  "author": "Spimy",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/glob": "7.2.0",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "discord.js": "^14.7.1",
+    "glob": "7.2.0"
+  }
+}
