@@ -19,3 +19,6 @@ dist/
 # dotenv environment variables file
 .env
 !.env.example
+
+# tsconfig tsbuildinfo
+*.tsbuildinfo
