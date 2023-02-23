@@ -74,7 +74,7 @@ This will enable the default `help` command. Useful if you do not want to code y
 
 ## Project Structure
 
-Your project structure is important in order to be scan to load commands and events you create.
+Your project structure is important in order to be scanned to load commands and events you create.
 
 Here's an example of your project structure should look like:
 
