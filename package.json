@@ -1,6 +1,6 @@
 {
   "name": "kita",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Discord.JS wrapper to speed up development process by getting the basics readily done. A revision of the monorepo 'yor' renamed to Kita.",
   "main": "dist/index.js",
   "types": "dist/index.d.js",
