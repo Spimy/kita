@@ -67,7 +67,7 @@ This will enable the default `ready` event. Useful if you only need this event t
 Optional. If provided, slash commands will be registered for this guild only. If not provided, slash commands will be registered globally.
 
 **helpCommand:**
-This will enable the default `help` command. Useful if you do not want to code your own help command. This is a classic message command and **NOT** a slash command. This will automatically sort commmands by category. Slash commands will not be listed in the list of commands.
+This will enable the default `help` command. Useful if you do not want to code your own help command. This is a classic message command and **NOT** a slash command. This will automatically sort commands by category. Slash commands will not be listed in the list of commands.
 
 ![help-list](https://cdn.spimy.dev/screenshots/Discord_5OjtgxNoY9.png)
 ![help-detailed](https://cdn.spimy.dev/screenshots/Discord_8VOY03TYNC.png)
