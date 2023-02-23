@@ -71,8 +71,8 @@ This will enable the default `help` command. Useful if you do not want to code y
 
 <details>
   <summary>Help Message Preview</summary>
-![help-list](https://cdn.spimy.dev/screenshots/Discord_5OjtgxNoY9.png)
-![help-detailed](https://cdn.spimy.dev/screenshots/Discord_8VOY03TYNC.png)
+  <img src="https://cdn.spimy.dev/screenshots/Discord_5OjtgxNoY9.png" alt="help-list" />
+  <img src="https://cdn.spimy.dev/screenshots/Discord_8VOY03TYNC.png" alt="help-detailed" />
 </details>
 
 ## Project Structure
