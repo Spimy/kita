@@ -112,7 +112,7 @@ If your bot contains both classic message commands and slash commands simultaneo
 
 ### Events folder
 
-This is where all your events you create reside in. You may categorise your events into subfolders and they will still be scanned.
+This is where all your events you create reside in. You may categorise your events into sub-folders and they will still be scanned.
 
 ## Creating Commands
 
