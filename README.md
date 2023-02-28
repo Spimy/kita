@@ -48,7 +48,7 @@ KitaClient comes with a custom constructor parameter that extends the default `C
 
 The root property is **required** and must **always** be set to `__dirname`. This is used as a way to scan your project structure.
 
-### Prefix
+#### Prefix
 
 The prefix property is **optional** and it overwrites the default prefix `>` for classic message commands to whichever you set this property to. You can always access the value of the prefix through the client instance: `client.prefix`.
 
