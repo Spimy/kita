@@ -42,11 +42,15 @@ You do not need to export the client instance as the it is automatically exposed
 
 ### KitaClient constructor properties
 
-KitaClient comes with a custom constructor parameter that extends the default `ClientOptions` constructor parameter. This means that anything that any options that works in the default client from [Discord.JS](https://discord.js.org/#/docs/discord.js/main/typedef/ClientOptions) will also work on KitaClient.
+KitaClient comes with a custom constructor parameter that extends the default `ClientOptions` constructor parameter. This means that any options that work in the default client from [Discord.JS](https://discord.js.org/#/docs/discord.js/main/typedef/ClientOptions) will also work on KitaClient.
 
 #### Root
 
 The root property is **required** and must **always** be set to `__dirname`. This is used as a way to scan your project structure.
+
+### Prefix
+
+The prefix property is **optional** and it overwrites the default prefix `>` for classic message commands to whichever you set this property to. You can always access the value of the prefix through the client instance: `client.prefix`.
 
 #### Defaults
 
@@ -196,12 +200,12 @@ In addition, you can see that the constructor can take a property called `custom
 
 ## Creating Events
 
-All command classes should be exported as `default` and should extend the `Event` class:
+All command classes should be exported as `default` and should extend the `Listener` class:
 
 ```ts
-import { Event } from 'kita';
+import { Listener } from 'kita';
 
-export default class extends Event {
+export default class extends Listener {
   constructor() {
     super('ready');
   }
@@ -217,9 +221,9 @@ The `KitaClient` instance can be accessed by adding it to the constructor of the
 If you do not wish to use the default `ready` event, slash commands will not be registered. Instead, in your custom `ready` event, import the `registerCommand` function in order to register them manually:
 
 ```ts
-import { KitaClient, Event, registerCommands } from 'kita';
+import { KitaClient, Listener, registerCommands } from 'kita';
 
-export default class extends Event {
+export default class extends Listener {
   constructor(private client: KitaClient) {
     super('ready');
   }
