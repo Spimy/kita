@@ -103,6 +103,7 @@ export class HelpCommand extends Command {
       [
         `${command.info.description.replace(/{prefix}/gi, prefix)}`,
         `Full command: \`${fullCommand}\``,
+        `Aliases: ${hasAliases ? `\`${command.info.aliases?.join(' | ')}\`` : '`None`'}`,
         `Permissions required: ${
           hasPerms ? `\`${command.info.permissions!.join(' | ')}\`` : '`None`'
         }`
@@ -122,15 +123,6 @@ export class HelpCommand extends Command {
           })
       );
     }
-
-    embed.addFields({
-      name: 'Aliases',
-      value: `${
-        hasAliases
-          ? command.info.aliases!.map((alias) => `\`${alias}\``).join(', ')
-          : '`None`'
-      }`
-    });
 
     message.channel.send({ embeds: [embed] });
     return true;
