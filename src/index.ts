@@ -4,3 +4,4 @@ export * from './types';
 export * from './errors';
 export * from './abstract';
 export * from './presets';
+export * from './handlers';
