@@ -1,14 +1,10 @@
 import { ClientOptions } from '../index';
-import { DefaultHelpCommand } from './defaults/help-command';
-import { DefaultEvents } from './defaults/events';
+import { Defaults } from './defaults';
 
 export interface KitaClientOptions extends ClientOptions {
   root: string;
   prefix?: string;
-  defaults?: {
-    helpCommand?: DefaultHelpCommand;
-    events?: DefaultEvents;
-  };
+  defaults?: Defaults;
 }
 
 export enum KitaClientModules {
