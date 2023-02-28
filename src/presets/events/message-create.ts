@@ -1,7 +1,7 @@
 import { Message, KitaClient } from '../../index';
-import { Event } from '../../abstract/event';
+import { Listener } from '../../abstract/listener';
 
-export class MessageCreateEvent extends Event {
+export class MessageCreateEvent extends Listener {
   constructor(private client: KitaClient) {
     super('messageCreate');
   }

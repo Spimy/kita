@@ -1,7 +1,7 @@
 import { BaseInteraction, EmbedBuilder, KitaClient } from '../../index';
-import { Event } from '../../abstract/event';
+import { Listener } from '../../abstract/listener';
 
-export class InteractionCreateEvent extends Event {
+export class InteractionCreateEvent extends Listener {
   constructor(private client: KitaClient) {
     super('interactionCreate');
   }

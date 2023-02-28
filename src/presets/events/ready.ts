@@ -1,8 +1,8 @@
 import { KitaClient, registerCommands } from '../../index';
-import { DefaultSlashCommands } from '../../types/defaults/events/ready';
-import { Event } from '../../abstract/event';
+import { DefaultSlashCommands } from '../../types/defaults/events';
+import { Listener } from '../../abstract/listener';
 
-export class ReadyEvent extends Event {
+export class ReadyEvent extends Listener {
   constructor(private client: KitaClient, private slashCommands: DefaultSlashCommands) {
     super('ready');
   }
