@@ -75,7 +75,7 @@ This will enable the default `help` command. Useful if you do not want to code y
 
 <details>
   <summary>Help Message Preview</summary>
-  <img src="https://cdn.spimy.dev/screenshots/Discord_UX5z103m60.png" alt="help-embeds" />
+  <img src="https://static.spimy.dev/screenshots/Discord_UX5z103m60.png" alt="help-embeds" />
 </details>
 
 ## Project Structure
